@@ -1,0 +1,13 @@
+<?php
+namespace App\models;
+// require_once __DIR__ . "/persona.php";
+use App\models\Persona;
+class administrativo extends Persona {
+    public function gestionarProceso($proceso) {
+        echo " Administrativo $this->nombre gestiona: $proceso<br>";
+    }
+
+    public function mostrarInfo() {
+        echo "Administrativo: $this->nombre | Doc: $this->documento | Correo: $this->correo<br>";
+    }
+}
